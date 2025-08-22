@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: "Roboto", sans-serif;
+    --title-lg: 2rem bold var(--font-family);
+    --text-lg: 1rem normal var(--font-family);
+    --text-md: 1rem bold var(--font-family);
+    --text-sm: 0.875rem normal var(--font-family);
+}
+
+body {
+    min-height: 100vh;
+    background: url(../assets/Imagem-de-fundo-2.png) no-repeat center;
+    background-size: cover;
+}
