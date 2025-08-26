@@ -1,17 +1,11 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    
-
 * {
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
 }
 
 :root {
-    --font-family: "Roboto", sans-serif;
+    --font-family: "Poppins", sans-serif;
     --title-lg: 2rem bold var(--font-family);
     --text-lg: 1rem normal var(--font-family);
     --text-md: 1rem bold var(--font-family);
@@ -19,14 +13,31 @@
 }
 
 body {
-   img {
-    min-height: 100vh;
-    min-width: 100vw;
-   }
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: url(../assets/img.jpg);
+   background-size: cover;
+   background-position: center;
 }
 
 .container {
-    --max-width: 414px;
-    width: min(var(--max-width), 100% - var(--px-md) * 2);
-    margin-inline: auto;
+    width: 420px;
+    margin-inline: 2rem;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: .5rem;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
 }
