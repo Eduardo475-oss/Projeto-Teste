@@ -55,3 +55,10 @@
     border-radius: .5rem;
     cursor: pointer;
 }
+
+.login:hover {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    transition: 0.5s;
+}
